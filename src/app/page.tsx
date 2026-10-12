@@ -19,7 +19,7 @@ export default function HomePage() {
   return (
     <PageShell>
       <section className="hero">
-        <div className="hero-media grain"><Image src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=2200&q=90" alt="Warmly lit specialty coffee bar with wooden details" fill priority sizes="100vw" style={{ objectFit: "cover" }} /></div>
+        <div className="hero-media"><Image src="/images/hero-coffee.jpg" alt="Golden espresso in a ceramic cup on a dark stone surface" fill priority sizes="(max-width: 899px) 100vw, 60vw" style={{ objectFit: "cover" }} /></div>
         <div className="container hero-content">
           <Reveal><span className="eyebrow" style={{ color: "#d6a878" }}>Specialty coffee · Quezon City</span><h1 className="display">Slow Mornings.<br />Bold Coffee.</h1></Reveal>
           <Reveal delay={.18} className="hero-copy"><p>Considered coffee for unhurried days—a warm, modern neighborhood café concept shaped around craft, conversation, and a genuinely good cup.</p><div className="button-row"><ButtonLink href="/menu">Explore our menu</ButtonLink><ButtonLink href="/contact" variant="secondary">Visit our café</ButtonLink></div></Reveal>

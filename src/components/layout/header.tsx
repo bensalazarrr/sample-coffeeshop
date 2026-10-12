@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     <>
-      <header className={`site-header ${scrolled || open ? "scrolled" : ""}`}>
+      <header className={`site-header ${scrolled || open ? "scrolled" : ""} ${pathname === "/" && !scrolled && !open ? "over-hero" : ""}`}>
         <div className="container nav-inner">
           <Link className="wordmark" href="/" aria-label={`${business.name} home`}>{business.name}</Link>
           <nav className="desktop-nav" aria-label="Primary navigation">

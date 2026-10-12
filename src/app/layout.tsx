@@ -20,9 +20,9 @@ const themeScript = `(function(){try{var t=localStorage.getItem('sample-cafe-the
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" data-theme="dark" suppressHydrationWarning>
+    <html lang="en" data-theme="dark" className={`${cormorant.variable} ${manrope.variable}`} suppressHydrationWarning>
       <head><script dangerouslySetInnerHTML={{ __html: themeScript }} /></head>
-      <body className={`${cormorant.variable} ${manrope.variable}`}>
+      <body>
         <ThemeProvider><Header />{children}<Footer /><BackToTop /></ThemeProvider>
       </body>
     </html>
